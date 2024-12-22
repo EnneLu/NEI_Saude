@@ -10,7 +10,7 @@ function Home() {
         
         <p>Selecione um perfil</p>
           <div className="button-group">
-            <button className="btn"><Link to="/enfermeiro">Enfermeiro</Link></button>
+            <Link to="/enfermeiro"><button className="btn">Enfermeiro</button></Link>
             <button className="btn">Nutricionista</button>
             <button className="btn">Psicólogo</button>
             <button className="btn">Professor</button>
