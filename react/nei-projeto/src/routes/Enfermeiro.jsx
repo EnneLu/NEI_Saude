@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import "./Enfermeiro.css";
+import "./Enfermeiro-responsividade.css";
+
 
 function Enfermeiro() {
   const [activeContent, setActiveContent] = useState("home"); // Define "home" como conteúdo padrão
@@ -47,24 +49,24 @@ function Enfermeiro() {
 
             <nav className="menu">
               <a href="#home" className="menu-item" onClick={() => setActiveContent("home")}>
-                <img className="iconSidebar" id="homeicon" src="/Home.svg" alt="" /> Home
+                <img className="iconSidebar" id="homeicon" src="/Home.svg" alt="" /> <p className='menu-item-palavras'>Home</p>
               </a>
               <a href="#prontuarios" className="menu-item" onClick={() => setActiveContent("prontuarios")}>
-                <img className="iconSidebar" src="/Prontuarios.svg" alt="" /> Prontuários
+                <img className="iconSidebar" src="/Prontuarios.svg" alt="" /> <p className='menu-item-palavras'>Prontuários</p>
               </a>
               <a href="#atendimentos" className="menu-item" onClick={() => setActiveContent("atendimentos")}>
-                <img className="iconSidebar" src="/Atendimentos.svg" alt="" /> Atendimentos
+                <img className="iconSidebar" src="/Atendimentos.svg" alt="" /> <p className='menu-item-palavras'>Atendimentos</p>
               </a>
               <a href="#notificar" className="menu-item" onClick={() => setActiveContent("notificar")}>
-                <img className="iconSidebar" src="/NotificarResponsaveis.svg" alt="" /> Notificar responsáveis
+                <img className="iconSidebar" src="/NotificarResponsaveis.svg" alt="" /> <p className='menu-item-palavras'>Notificar responsáveis</p>
               </a>
+              
             </nav>
-
-            <div className="settings">
-              <hr className="divider" />
+           <div className="settings">
+              <hr className="divider-config" />
               <a href="#">
                 <img id="iconConfig" src="/Configuracoes.svg" alt="" />
-                Configurações
+                <p className='config-palavra'>Configurações</p>
               </a>
             </div>
           </div>
@@ -81,7 +83,7 @@ function Enfermeiro() {
                   <div className="atendimentos">
                     <div className="iniciar">
                       <h2>Atendimentos</h2>
-                      <button>Iniciar Atendimento</button>
+                      <button>Iniciar</button>
                     </div>
                     <ul>
                       <li className="list-item">
@@ -263,7 +265,9 @@ function Enfermeiro() {
               </div>
             )}
           </div>
+
         </section>
+        
       </body>
     </>
   );

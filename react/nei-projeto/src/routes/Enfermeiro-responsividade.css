@@ -1,0 +1,99 @@
+/*----------------- Responsividade -----------------*/
+@media screen and (max-width: 768px) and (min-width: 501px) {
+
+    /*-------------Cabeçalho---------------*/
+      .logo-container{
+        margin-left: -30px;
+      }
+    
+      .search-input {
+          margin-left: 0;
+      }
+    
+      /*-------------Principal--------------*/
+      .main-container {
+          flex-direction: column;
+      }
+    /*---------------sidebar----------------*/
+      .sidebar {
+        transition: 12s;
+          width: 100%;
+          height: auto;
+      }
+      
+      .settings{
+        display: none;
+      }
+      /*-------------Home-------------------*/
+    
+      .row{
+        display: block;
+      }
+      .atendimentos{
+        transition: 0.6s;
+        margin-bottom: 20px;
+      }
+      .solicitacoes{
+        transition: 0.6s;
+      }
+      .turmas{
+        transition: 0.6s;
+      }
+      
+    }
+
+    
+    @media screen and (max-width: 500px) {
+      
+      /*-------------Cabeçalho---------------*/
+      .logo-container{
+        margin-left: -30px;
+      }
+      
+      .links > span{
+        display: none;
+      }
+    
+      .search-input {
+          margin-left: 0;
+      }
+    
+      /*-------------Principal--------------*/
+    
+      .main-container {
+          flex-direction: column;
+      }
+    /*---------------sidebar----------------*/
+      .sidebar {
+          width: 100%;
+          height: auto;
+      }
+      .menu-item-palavras{
+        display: none;
+      }
+      .iconSidebar{
+        margin: auto;
+        width: 30px;
+      }
+      #iconConfig{
+        width: 30px;
+        margin: auto;
+      }
+      .config-palavra{
+        display: none;
+      }
+      .divider-config{
+        display: none;
+      }
+      #iconConfig:hover{
+        filter: hue-rotate(100deg);
+      }
+      /*-------------Home-------------------*/
+    
+      .row{
+        display: block;
+      }
+      .atendimentos{
+        margin-bottom: 20px;
+      }
+    }
