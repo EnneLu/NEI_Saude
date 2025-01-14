@@ -252,17 +252,80 @@ function Enfermeiro() {
             )}
 
             {activeContent === "atendimentos" && (
-              <div>
-                <h2>Atendimentos</h2>
-                <p>Listagem de atendimentos em andamento...</p>
+              <div className="atendimentos-container">
+              <h1 className="atendimentos-title">Atendimentos</h1>
+          
+              <div className="atendimentos-header">
+                <div className="atendimentos-info">
+                  <h2>Registro de Atendimentos</h2>
+                  <p>Acompanhe e registre os atendimentos realizados aos alunos.</p>
+                </div>
               </div>
+          
+              <div className="atendimentos-section">
+                <h3>Tipo de Atendimento</h3>
+                <select className="select-tipo-atendimento">
+                  <option value="consulta">Consulta Médica</option>
+                  <option value="emergencia">Emergência</option>
+                  <option value="psicologico">Atendimento Psicológico</option>
+                  <option value="vacina">Vacinação</option>
+                </select>
+              </div>
+          
+              <div className="atendimentos-section">
+                <h3>Data e Hora</h3>
+                <input
+                  type="datetime-local"
+                  className="input-data-hora"
+                />
+              </div>
+          
+              <div className="atendimentos-section">
+                <h3>Observações</h3>
+                <textarea
+                  placeholder="Digite as observações do atendimento..."
+                  className="atendimentos-input"
+                ></textarea>
+              </div>
+          
+              <div className="atendimentos-buttons">
+                <button className="btn-cancelar-atendimento">Cancelar</button>
+                <button className="btn-registrar-atendimento">Registrar Atendimento</button>
+              </div>
+            </div>
             )}
 
             {activeContent === "notificar" && (
-              <div>
-                <h2>Notificar Responsáveis</h2>
-                <p>Envie notificações para os responsáveis pelos pacientes.</p>
+              <div className="notificacao-container">
+              <h1 className="notificacao-title">Notificar Responsáveis</h1>
+          
+              <div className="notificacao-info">
+                <p>Será enviado um email para o responsável do aluno sobre o atendimento caso seja identificado um problema relacionado a saúde do aluno</p>
               </div>
+          
+              <div className="notificacao-section">
+                <h3>Selecione o Responsável</h3>
+                <select className="select-responsavel">
+                  <option value="francisca">Francisca Fernandes Campos</option>
+                  <option value="maria">Maria Antonieta</option>
+                  <option value="carlos">Carlos Silva</option>
+                  <option value="antonio">Antonio Pereira</option>
+                </select>
+              </div>
+          
+              <div className="notificacao-section">
+                <h3>Mensagem</h3>
+                <textarea
+                  placeholder="Digite sua mensagem aqui..."
+                  className="notificacao-input"
+                ></textarea>
+              </div>
+          
+              <div className="notificacao-buttons">
+                <button className="btn-cancelar-notificacao">Cancelar</button>
+                <button className="btn-enviar-notificacao">Enviar Notificação</button>
+              </div>
+            </div>
             )}
           </div>
 
