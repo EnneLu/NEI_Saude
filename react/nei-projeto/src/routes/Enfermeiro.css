@@ -673,32 +673,3 @@ label {
   justify-content: right;
   margin-top: 20px;
 }
-
-.btn-cancelar-notificacao,
-.btn-enviar-notificacao {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin-left: 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn-cancelar-notificacao {
-  background-color: #f44336;
-  color: white;
-}
-
-.btn-enviar-notificacao {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.btn-cancelar-notificacao:hover {
-  background-color: #d13232;
-}
-
-.btn-enviar-notificacao:hover {
-  background-color: #388e3c;
-}
-

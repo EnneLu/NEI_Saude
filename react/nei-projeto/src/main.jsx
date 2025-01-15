@@ -4,8 +4,10 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from './App.jsx';
-import Home from "./routes/home.jsx";
-import Enfermeiro from "./routes/Enfermeiro.jsx"
+import Home from "./routes/Home.jsx";
+import Enfermeiro from "./routes/Enfermeiro.jsx";
+import Psicologo from './routes/Psicologo.jsx';
+import Professor from './routes/Professor.jsx'
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
       {
         path: "enfermeiro",
         element: <Enfermeiro/>,
+      },
+      {
+        path: "psicologo",
+        element: <Psicologo/>,
+      },
+      {
+        path: "professor",
+        element: <Professor/>,
       },
   ]
   }

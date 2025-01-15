@@ -11,9 +11,8 @@ function Home() {
         <p>Selecione um perfil</p>
         <div className="button-group">
           <Link className='botoes' to="/enfermeiro"><button className="btn">Enfermeiro</button></Link>
-          <Link><button className="btn">Nutricionista</button></Link>
-          <Link><button className="btn">Psicólogo</button></Link>
-          <Link><button className="btn">Professor</button></Link>
+          <Link className='botoes' to="/psicologo"><button className="btn">Psicólogo</button></Link>
+          <Link className='botoes' to="/professor"><button className="btn">Professor</button></Link>
         </div>              
       </section>
     </div>
