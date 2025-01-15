@@ -83,57 +83,67 @@ function Enfermeiro() {
                   <div className="atendimentos">
                     <div className="iniciar">
                       <h2>Atendimentos</h2>
-                      <button>Iniciar</button>
+                      <button>Iniciar Atendimento</button>
                     </div>
-                    <ul>
-                      <li className="list-item">
-                        <span className="name-with-photo">
-                          <img className="foto-criancas" src="/lara.jpg" alt="Lara Silva" /> Lara Silva
-                        </span>
-                        <button className="visualizar">Visualizar</button>
-                      </li>
-                      <li className="list-item">
-                        <span className="name-with-photo">
-                          <img className="foto-criancas" src="/nicolas.jpg" alt="Nicolas Giroud" /> Nicolas Giroud
-                        </span>
-                        <button className="visualizar">Visualizar</button>
-                      </li>
-                      <li className="list-item">
-                        <span className="name-with-photo">
-                          <img className="foto-criancas" src="/julia.jpg" alt="Julia Thaina" /> Julia Thaina
-                        </span>
-                        <button className="visualizar">Visualizar</button>
-                      </li>
-                    </ul>
+                    <div>
+                      <ul>
+                        <li className="list-item">
+                          <span className="name-with-photo">
+                            <img className="foto-criancas" src="/lara.jpg" alt="Lara Silva" /> Lara Silva
+                          </span>
+                          <button className="visualizar">Visualizar</button>
+                        </li>
+                        <li className="list-item">
+                          <span className="name-with-photo">
+                            <img className="foto-criancas" src="/nicolas.jpg" alt="Nicolas Giroud" /> Nicolas Giroud
+                          </span>
+                          <button className="visualizar">Visualizar</button>
+                        </li>
+                        <li className="list-item">
+                          <span className="name-with-photo">
+                            <img className="foto-criancas" src="/julia.jpg" alt="Julia Thaina" /> Julia Thaina
+                          </span>
+                          <button className="visualizar">Visualizar</button>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
 
                   <div className="solicitacoes">
-                    <h2>Solicitações</h2>
+                    <div className="iniciar">
+                      <h2>Solicitações</h2>
+                    </div>
+                    <div>
+                      <ul>
+                        <li className="list-item">
+                          <span className="name-with-photo">
+                            <img className="foto-criancas" src="/enzo.jpg" alt="Enzo Gomes" /> Enzo Gomes
+                          </span>
+                          <button className="visualizar">Iniciar Atendimento</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="iniciar">
+                    <h2>Turmas</h2>
+                  </div>
+                  <div className="turmas">
                     <ul>
-                      <li className="list-item">
-                        <span className="name-with-photo">
-                          <img className="foto-criancas" src="/enzo.jpg" alt="Enzo Gomes" /> Enzo Gomes
-                        </span>
+                      <li>
+                        <span>3º Ano A</span>
+                        <span>Professor: Carlos Silva</span>
+                        <button className="visualizar">Visualizar</button>
+                      </li>
+                      <li>
+                        <span>3º Ano B</span>
+                        <span>Professor: Maria Antonieta</span>
                         <button className="visualizar">Visualizar</button>
                       </li>
                     </ul>
                   </div>
-                </div>
-
-                <div className="turmas">
-                  <h2>Turmas</h2>
-                  <ul>
-                    <li>
-                      <span>3º Ano A</span>
-                      <span>Professor: Carlos Silva</span>
-                      <button className="visualizar">Visualizar</button>
-                    </li>
-                    <li>
-                      <span>3º Ano B</span>
-                      <span>Professor: Maria Antonieta</span>
-                      <button className="visualizar">Visualizar</button>
-                    </li>
-                  </ul>
                 </div>
               </>
             )}
@@ -146,7 +156,9 @@ function Enfermeiro() {
                 </div>
 
                 <div className="prontuario-container">
-                  <h1 className="prontuario-title">Prontuário</h1>
+                  <div>
+                    <h1 className="prontuario-title">Prontuário</h1>
+                  </div>                  
                   <div className="prontuario-header">
                     <img
                       src="/lara80px.jpg"
@@ -160,172 +172,173 @@ function Enfermeiro() {
                     </div>
                     <span className="student-grade">3º Ano A</span>
                   </div>
+                  <br></br>
+                  <div className="prontuario-section">                  
+                    <div>
+                      <h3>Ocorrência</h3>
+                      <textarea placeholder="Digite aqui..." className="occurrence-input"></textarea>
+                    </div>
+                    <div>
+                      <h3>Medicamento Aplicado</h3>
+                      <div className="medication-options">
+                        <label>
+                          <input type="radio" name="medication" value="Cimegripe" />
+                          Cimegripe
+                        </label>
+                        <label>
+                          <input type="radio" name="medication" value="Paracetamol" />
+                          Paracetamol
+                        </label>
+                        <label>
+                          <input type="radio" name="medication" value="Dorflex" />
+                          Dorflex
+                        </label>
+                        <label>
+                          <input type="radio" name="medication" value="Timeolate" />
+                          Timeolate
+                        </label>
+                        <label>
+                          <input type="radio" name="medication" value="Ibuprofeno" />
+                          Ibuprofeno
+                        </label>
+                        <label>
+                          <input type="radio" name="medication" value="Nenhum" />
+                          Nenhum
+                        </label>
+                      </div>
+                    </div>
+                    <div>
+                      <h3>Sintomas</h3>
+                      <div className="symptoms-options">
+                        <label>
+                          <input type="checkbox" value="Machucado Queda" />
+                          Machucado Queda
+                        </label>
+                        <label>
+                          <input type="checkbox" value="Vermelhidão" />
+                          Vermelhidão
+                        </label>
+                        <label>
+                          <input type="checkbox" value="Tosse" />
+                          Tosse
+                        </label>
+                        <label>
+                          <input type="checkbox" value="Febre" />
+                          Febre
+                        </label>
+                        <label>
+                          <input type="checkbox" value="Coriza" />
+                          Coriza
+                        </label>
+                        <label>
+                          <input type="checkbox" value="Outros" />
+                          Outros
+                        </label>
+                      </div>
+                    </div>
 
-                  <div className="prontuario-section">
-                    <h3>Ocorrência</h3>
-                    <textarea placeholder="Digite aqui..." className="occurrence-input"></textarea>
-                  </div>
+                    <div>
+                      <h3>Observações</h3>
+                      <textarea placeholder="Digite aqui..." className="occurrence-input"></textarea>
+                    </div>
 
-                  <div className="prontuario-section">
-                    <h3>Medicamento Aplicado</h3>
-                    <div className="medication-options">
+                    <div>
+                      <h3>Exige Acompanhamento?</h3>
                       <label>
-                        <input type="radio" name="medication" value="Cimegripe" />
-                        Cimegripe
+                        <input type="radio" name="acompanhamento" value="Sim" />
+                        Sim
                       </label>
                       <label>
-                        <input type="radio" name="medication" value="Paracetamol" />
-                        Paracetamol
-                      </label>
-                      <label>
-                        <input type="radio" name="medication" value="Dorflex" />
-                        Dorflex
-                      </label>
-                      <label>
-                        <input type="radio" name="medication" value="Timeolate" />
-                        Timeolate
-                      </label>
-                      <label>
-                        <input type="radio" name="medication" value="Ibuprofeno" />
-                        Ibuprofeno
-                      </label>
-                      <label>
-                        <input type="radio" name="medication" value="Nenhum" />
-                        Nenhum
+                        <input type="radio" name="acompanhamento" value="Não" />
+                        Não
                       </label>
                     </div>
-                  </div>
 
-                  <div className="prontuario-section">
-                    <h3>Sintomas</h3>
-                    <div className="symptoms-options">
-                      <label>
-                        <input type="checkbox" value="Machucado Queda" />
-                        Machucado Queda
-                      </label>
-                      <label>
-                        <input type="checkbox" value="Vermelhidão" />
-                        Vermelhidão
-                      </label>
-                      <label>
-                        <input type="checkbox" value="Tosse" />
-                        Tosse
-                      </label>
-                      <label>
-                        <input type="checkbox" value="Febre" />
-                        Febre
-                      </label>
-                      <label>
-                        <input type="checkbox" value="Coriza" />
-                        Coriza
-                      </label>
-                      <label>
-                        <input type="checkbox" value="Outros" />
-                        Outros
-                      </label>
+                    <div className="prontuario-buttons">
+                      <button className="btn-cancelar">Cancelar</button>
+                      <button className="btn-concluir">Concluir</button>
                     </div>
-                  </div>
-
-                  <div className="prontuario-section">
-                    <h3>Observações</h3>
-                    <textarea placeholder="Digite aqui..." className="occurrence-input"></textarea>
-                  </div>
-
-                  <div className='prontuario-section'>
-                    <h3>Exige Acompanhamento?</h3>
-                    <label>
-                      <input type="radio" name="acompanhamento" value="Sim" />
-                      Sim
-                    </label>
-                    <label>
-                      <input type="radio" name="acompanhamento" value="Não" />
-                      Não
-                    </label>
-                  </div>
-
-                  <div className="prontuario-buttons">
-                    <button className="btn-cancelar">Cancelar</button>
-                    <button className="btn-concluir">Concluir</button>
                   </div>
                 </div>
               </>
             )}
 
             {activeContent === "atendimentos" && (
-              <div className="atendimentos-container">
-              <h1 className="atendimentos-title">Atendimentos</h1>
-          
-              <div className="atendimentos-header">
-                <div className="atendimentos-info">
-                  <h2>Registro de Atendimentos</h2>
-                  <p>Acompanhe e registre os atendimentos realizados aos alunos.</p>
+              <>
+                <div className="pagina">
+                  <img id="home-pagina" className="iconSidebar" src="/Home.svg" alt="" />
+                  <span id="homes"> &gt; Buscar Atendimento </span>
+                </div>            
+                <div className="prontuario-container">
+                  <div>
+                    <h1 className="prontuario-title">Atendimentos</h1>
+                  </div> 
+                </div>            
+                <div className="prontuario-section">
+                  <h3>Tipo de Atendimento</h3>
+                  <select className="select-tipo-atendimento">
+                    <option value="consulta">Consulta Médica</option>
+                    <option value="emergencia">Emergência</option>
+                  </select>
+                  <h3>Data e Hora</h3>
+                  <input
+                    type="datetime-local"
+                    className="input-data-hora"
+                  />
+                  <div className="prontuario-buttons">
+                      <button className="btn-cancelar">Cancelar</button>
+                      <button className="btn-concluir">Buscar</button>
+                   </div>                 
                 </div>
-              </div>
-          
-              <div className="atendimentos-section">
-                <h3>Tipo de Atendimento</h3>
-                <select className="select-tipo-atendimento">
-                  <option value="consulta">Consulta Médica</option>
-                  <option value="emergencia">Emergência</option>
-                  <option value="psicologico">Atendimento Psicológico</option>
-                  <option value="vacina">Vacinação</option>
-                </select>
-              </div>
-          
-              <div className="atendimentos-section">
-                <h3>Data e Hora</h3>
-                <input
-                  type="datetime-local"
-                  className="input-data-hora"
-                />
-              </div>
-          
-              <div className="atendimentos-section">
-                <h3>Observações</h3>
-                <textarea
-                  placeholder="Digite as observações do atendimento..."
-                  className="atendimentos-input"
-                ></textarea>
-              </div>
-          
-              <div className="atendimentos-buttons">
-                <button className="btn-cancelar-atendimento">Cancelar</button>
-                <button className="btn-registrar-atendimento">Registrar Atendimento</button>
-              </div>
-            </div>
+              </>
             )}
 
             {activeContent === "notificar" && (
-              <div className="notificacao-container">
-              <h1 className="notificacao-title">Notificar Responsáveis</h1>
-          
-              <div className="notificacao-info">
-                <p>Será enviado um email para o responsável do aluno sobre o atendimento caso seja identificado um problema relacionado a saúde do aluno</p>
+              <>
+                <div className="pagina">
+                  <img id="home-pagina" className="iconSidebar" src="/Home.svg" alt="" />
+                  <span id="homes"> &gt; Notificar Renponsáveis </span>
+                </div>
+                <div className="prontuario-container">
+                  <div>
+                    <h1 className="prontuario-title">Notificar Renponsáveis</h1>
+                  </div> 
+                </div>            
+                <div className="prontuario-section">
+                  <h3>Selecione a Turma</h3>
+                  <select className="select-responsavel">
+                    <option value="francisca"></option>
+                    <option value="francisca">3 ano A</option>
+                    <option value="maria">3 ano B</option>
+                    <option value="carlos">4 ano A</option>
+                    <option value="antonio">4 ano B</option>
+                  </select>
+                  <h3>Selecione o Aluno</h3>
+                  <select className="select-responsavel">
+                    <option value="francisca"></option>
+                    <option value="francisca">Francisca Fernandes Campos</option>
+                    <option value="maria">Maria Antonieta</option>
+                    <option value="carlos">Carlos Silva</option>
+                    <option value="antonio">Antonio Pereira</option>
+                  </select>                  
+                  <h3>Selecione o Responsável</h3>
+                  <select className="select-responsavel">
+                    <option value="francisca"></option>
+                    <option value="francisca">João Fernandes Campos</option>
+                    <option value="maria">Maria Antonieta</option>
+                  </select>
+                  <h3>Mensagem</h3>
+                  <textarea
+                    placeholder="Digite sua mensagem aqui..."
+                    className="notificacao-input"
+                  ></textarea>
+            
+                  <div className="prontuario-buttons">
+                      <button className="btn-cancelar">Cancelar</button>
+                      <button className="btn-concluir">Concluir</button>
+                  </div> 
               </div>
-          
-              <div className="notificacao-section">
-                <h3>Selecione o Responsável</h3>
-                <select className="select-responsavel">
-                  <option value="francisca">Francisca Fernandes Campos</option>
-                  <option value="maria">Maria Antonieta</option>
-                  <option value="carlos">Carlos Silva</option>
-                  <option value="antonio">Antonio Pereira</option>
-                </select>
-              </div>
-          
-              <div className="notificacao-section">
-                <h3>Mensagem</h3>
-                <textarea
-                  placeholder="Digite sua mensagem aqui..."
-                  className="notificacao-input"
-                ></textarea>
-              </div>
-          
-              <div className="notificacao-buttons">
-                <button className="btn-cancelar-notificacao">Cancelar</button>
-                <button className="btn-enviar-notificacao">Enviar Notificação</button>
-              </div>
-            </div>
+            </>
             )}
           </div>
 
