@@ -24,7 +24,8 @@ function Professor() {
           </div>
 
           <div className="icon-container">
-            <img id="notificacao" src="/notificacao.svg" alt="" />
+          <a href="#notificacoes"onClick={() => setActiveContent("notificacoes")}><img id="notificacao" src="/notificacao.svg" alt="" /></a>
+
             <Link className="links" to="/">
               <img id="logout" src="/logout.svg" alt="" />
               <span className="logout">Sair</span>
@@ -221,6 +222,35 @@ function Professor() {
                   </div> 
               </div>
             </>
+            )}
+             {activeContent === "notificacoes" && (
+              <>
+                <div className="pagina">
+                    <img id="home-pagina" className="iconSidebar" src="/Home.svg" alt="" />
+                    <span id="homes"> &gt; Notificações </span>
+                </div>
+                <div className="prontuario-container">
+                    <div>
+                    <h1 className="prontuario-title">Notificações</h1>
+                    </div> 
+                </div>  
+                <div className="notificacao-container">
+                  <ul className="notificacao-list">
+                    <li className="notificacao-item">
+                      <span>Novo atendimento registrado por Maria Jenner.</span>
+                      <button className="visualizar">Visualizar</button>
+                    </li>
+                    <li className="notificacao-item">
+                      <span>Atualização no prontuário de Lara Silva.</span>
+                      <button className="visualizar">Visualizar</button>
+                    </li>
+                    <li className="notificacao-item">
+                      <span>Nova mensagem de Carlos Silva.</span>
+                      <button className="visualizar">Visualizar</button>
+                    </li>
+                  </ul>
+                </div>
+              </>
             )}
           </div>
 
