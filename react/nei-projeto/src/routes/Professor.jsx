@@ -106,7 +106,7 @@ function Professor() {
 
                   <div className="solicitacoes">
                     <div className="iniciar">
-                      <h2>Solicitações</h2>
+                      <h2>Solicitar Atendimento Médico</h2>
                     </div>
                     <div>
                       <ul>
@@ -114,7 +114,7 @@ function Professor() {
                           <span className="name-with-photo">
                             <img className="foto-criancas" src="/enzo.jpg" alt="Enzo Gomes" /> Enzo Gomes
                           </span>
-                          <button className="visualizar">Iniciar Atendimento</button>
+                          <button className="visualizar">Solicitar Atendimento</button>
                         </li>
                       </ul>
                     </div>
@@ -129,12 +129,12 @@ function Professor() {
                     <ul>
                       <li>
                         <span>3º Ano A</span>
-                        <span>Professor: Carlos Silva</span>
+                        <span>Professor: Maria Jenner</span>
                         <button className="visualizar">Visualizar</button>
                       </li>
                       <li>
                         <span>3º Ano B</span>
-                        <span>Professor: Maria Antonieta</span>
+                        <span>Professor: Maria Jenner</span>
                         <button className="visualizar">Visualizar</button>
                       </li>
                     </ul>

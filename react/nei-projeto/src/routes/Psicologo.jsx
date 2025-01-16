@@ -216,6 +216,7 @@ function Psicologo() {
             <div className="prontuario-section">
                 <h3>Tipo de Atendimento</h3>
                 <select className="select-tipo-atendimento">
+                <option value="consulta"></option>
                 <option value="consulta">Consulta Médica</option>
                 <option value="emergencia">Emergência</option>
                 </select>
@@ -282,19 +283,18 @@ function Psicologo() {
          {activeContent === "notificacoes" && (
               <>
                 <div className="pagina">
-                  <img id="home-pagina" className="iconSidebar" src="/Home.svg" alt="" />
-                  <span id="homes"> &gt; Notificações </span>
+                    <img id="home-pagina" className="iconSidebar" src="/Home.svg" alt="" />
+                    <span id="homes"> &gt; Notificações </span>
                 </div>
-
+                <div className="prontuario-container">
+                    <div>
+                    <h1 className="prontuario-title">Notificações</h1>
+                    </div> 
+                </div>  
                 <div className="notificacao-container">
-                  <h1 className="notificacao-title">Notificações</h1>
                   <ul className="notificacao-list">
                     <li className="notificacao-item">
                       <span>Novo atendimento registrado por Maria Jenner.</span>
-                      <button className="visualizar">Visualizar</button>
-                    </li>
-                    <li className="notificacao-item">
-                      <span>Atualização no prontuário de Lara Silva.</span>
                       <button className="visualizar">Visualizar</button>
                     </li>
                     <li className="notificacao-item">
@@ -306,9 +306,7 @@ function Psicologo() {
               </>
             )}
         </div>
-
-    </section>
-    
+    </section>  
     </body>
     </>  
 );
