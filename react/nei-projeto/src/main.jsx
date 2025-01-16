@@ -7,7 +7,7 @@ import App from './App.jsx';
 import Home from "./routes/Home.jsx";
 import Enfermeiro from "./routes/Enfermeiro.jsx";
 import Psicologo from './routes/Psicologo.jsx';
-import Professor from './routes/Professor.jsx'
+import Professor from './routes/Professor.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +30,7 @@ const router = createBrowserRouter([
         path: "professor",
         element: <Professor/>,
       },
+      
   ]
   }
 ]);

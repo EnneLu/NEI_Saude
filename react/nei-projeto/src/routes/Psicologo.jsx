@@ -24,7 +24,8 @@ function Psicologo() {
         </div>
 
         <div className="icon-container">
-        <img id="notificacao" src="/notificacao.svg" alt="" />
+        <a href="#notificacoes"onClick={() => setActiveContent("notificacoes")}><img id="notificacao" src="/notificacao.svg" alt="" /></a>
+
         <Link className="links" to="/">
             <img id="logout" src="/logout.svg" alt="" />
             <span className="logout">Sair</span>
@@ -50,9 +51,7 @@ function Psicologo() {
             <a href="#home" className="menu-item" onClick={() => setActiveContent("home")}>
             <img className="iconSidebar" id="homeicon" src="/Home.svg" alt="" /> <p className='menu-item-palavras'>Home</p>
             </a>
-            <a href="#prontuarios" className="menu-item" onClick={() => setActiveContent("prontuarios")}>
-            <img className="iconSidebar" src="/Prontuarios.svg" alt="" /> <p className='menu-item-palavras'>Prontuários</p>
-            </a>
+           
             <a href="#atendimentos" className="menu-item" onClick={() => setActiveContent("atendimentos")}>
             <img className="iconSidebar" src="/Atendimentos.svg" alt="" /> <p className='menu-item-palavras'>Atendimentos</p>
             </a>
@@ -82,7 +81,7 @@ function Psicologo() {
                 <div className="atendimentos">
                 <div className="iniciar">
                     <h2>Atendimentos</h2>
-                    <button>Iniciar Atendimento</button>
+                    <button onClick={() => setActiveContent("prontuarios")}>Iniciar Atendimento</button>
                 </div>
                 <div>
                     <ul>
@@ -118,7 +117,7 @@ function Psicologo() {
                         <span className="name-with-photo">
                         <img className="foto-criancas" src="/enzo.jpg" alt="Enzo Gomes" /> Enzo Gomes
                         </span>
-                        <button className="visualizar">Iniciar Atendimento</button>
+                        <button onClick={() => setActiveContent("prontuarios")}className="visualizar">Iniciar Atendimento</button>
                     </li>
                     </ul>
                 </div>
@@ -280,6 +279,32 @@ function Psicologo() {
             </div>
         </>
         )}
+         {activeContent === "notificacoes" && (
+              <>
+                <div className="pagina">
+                  <img id="home-pagina" className="iconSidebar" src="/Home.svg" alt="" />
+                  <span id="homes"> &gt; Notificações </span>
+                </div>
+
+                <div className="notificacao-container">
+                  <h1 className="notificacao-title">Notificações</h1>
+                  <ul className="notificacao-list">
+                    <li className="notificacao-item">
+                      <span>Novo atendimento registrado por Maria Jenner.</span>
+                      <button className="visualizar">Visualizar</button>
+                    </li>
+                    <li className="notificacao-item">
+                      <span>Atualização no prontuário de Lara Silva.</span>
+                      <button className="visualizar">Visualizar</button>
+                    </li>
+                    <li className="notificacao-item">
+                      <span>Nova mensagem de Carlos Silva.</span>
+                      <button className="visualizar">Visualizar</button>
+                    </li>
+                  </ul>
+                </div>
+              </>
+            )}
         </div>
 
     </section>
