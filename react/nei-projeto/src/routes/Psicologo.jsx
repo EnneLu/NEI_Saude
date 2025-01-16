@@ -39,11 +39,11 @@ function Psicologo() {
         <div className="sidebar">
         <div className="profile">
             <div className="fundoProfile">
-            <img src="/maria.png" alt="Maria Jenner" className="profile-picture" />
+            <img src="/psicologa.png" alt="Roberta Silva" className="profile-picture" />
             <h2>PSICOLOGA</h2>
             </div>
-            <h3>Maria Jenner</h3>
-            <p>enfermeira@gmail.com</p>
+            <h3>Roberta Silva</h3>
+            <p>psicologa@gmail.com</p>
             <hr className="divider" />
         </div>
 
@@ -87,19 +87,19 @@ function Psicologo() {
                     <ul>
                     <li className="list-item">
                         <span className="name-with-photo">
-                        <img className="foto-criancas" src="/lara.jpg" alt="Lara Silva" /> Lara Silva
+                        <img className="foto-criancas" src="/heloisa.png" alt="Heloisa Costa" /> Heloisa Costa
                         </span>
                         <button className="visualizar">Visualizar</button>
                     </li>
                     <li className="list-item">
                         <span className="name-with-photo">
-                        <img className="foto-criancas" src="/nicolas.jpg" alt="Nicolas Giroud" /> Nicolas Giroud
+                        <img className="foto-criancas" src="/mavi.png" alt="Mavi Pereira" /> Mavi Pereira
                         </span>
                         <button className="visualizar">Visualizar</button>
                     </li>
                     <li className="list-item">
                         <span className="name-with-photo">
-                        <img className="foto-criancas" src="/julia.jpg" alt="Julia Thaina" /> Julia Thaina
+                        <img className="foto-criancas" src="/pedro.png" alt="Pedro Ribeiro" /> Pedro Ribeiro
                         </span>
                         <button className="visualizar">Visualizar</button>
                     </li>
@@ -115,7 +115,7 @@ function Psicologo() {
                     <ul>
                     <li className="list-item">
                         <span className="name-with-photo">
-                        <img className="foto-criancas" src="/enzo.jpg" alt="Enzo Gomes" /> Enzo Gomes
+                        <img className="foto-criancas" src="/vitor.png" alt="Vitor Henrique" /> Vitor Henrique
                         </span>
                         <button onClick={() => setActiveContent("prontuarios")}className="visualizar">Iniciar Atendimento</button>
                     </li>
@@ -132,12 +132,12 @@ function Psicologo() {
                 <ul>
                     <li>
                     <span>3º Ano A</span>
-                    <span>Professor: Carlos Silva</span>
+                    <span>Professor: Amanda Falcão</span>
                     <button className="visualizar">Visualizar</button>
                     </li>
                     <li>
                     <span>3º Ano B</span>
-                    <span>Professor: Maria Antonieta</span>
+                    <span>Professor: Amanda Falcão</span>
                     <button className="visualizar">Visualizar</button>
                     </li>
                 </ul>
@@ -159,14 +159,14 @@ function Psicologo() {
                 </div>                  
                 <div className="prontuario-header">
                 <img
-                    src="/lara80px.jpg"
+                    src="/vitor.png"
                     alt="Foto do Aluno"
                     className="student-photo"
                 />
                 <div className="student-info">
-                    <h2>Lara Silva Mendes</h2>
-                    <p>7 ANOS (01/02/2017)</p>
-                    <p>Responsáveis: Francisca Fernandes Campos</p>
+                    <h2>Vitor Henrique Morais</h2>
+                    <p>6 ANOS (11/07/2017)</p>
+                    <p>Responsáveis: Fernanda Morais da Silva </p>
                 </div>
                 <span className="student-grade">3º Ano A</span>
                 </div>

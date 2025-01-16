@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import "./Enfermeiro.css";
-import "./Enfermeiro-responsividade.css";
 
 
 function Enfermeiro() {
@@ -133,12 +132,12 @@ function Enfermeiro() {
                     <ul>
                       <li>
                         <span>3º Ano A</span>
-                        <span>Professor: Carlos Silva</span>
+                        <span>Professor: Amanda Falcão</span>
                         <button className="visualizar">Visualizar</button>
                       </li>
                       <li>
                         <span>3º Ano B</span>
-                        <span>Professor: Maria Antonieta</span>
+                        <span>Professor: Amanda Falcão</span>
                         <button className="visualizar">Visualizar</button>
                       </li>
                     </ul>
@@ -160,14 +159,14 @@ function Enfermeiro() {
                   </div>                  
                   <div className="prontuario-header">
                     <img
-                      src="/lara80px.jpg"
+                      src="/enzo.jpg"
                       alt="Foto do Aluno"
                       className="student-photo"
                     />
                     <div className="student-info">
-                      <h2>Lara Silva Mendes</h2>
+                      <h2>Enzo Gomes Medeiros</h2>
                       <p>7 ANOS (01/02/2017)</p>
-                      <p>Responsáveis: Francisca Fernandes Campos</p>
+                      <p>Responsáveis: Junior Santos Medeiros</p>
                     </div>
                     <span className="student-grade">3º Ano A</span>
                   </div>

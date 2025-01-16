@@ -38,11 +38,11 @@ function Professor() {
           <div className="sidebar">
             <div className="profile">
               <div className="fundoProfile">
-                <img src="/maria.png" alt="Maria Jenner" className="profile-picture" />
+                <img src="/professora.png" alt="Maria Jenner" className="profile-picture" />
                 <h2>PROFESSORA</h2>
               </div>
-              <h3>Maria Jenner</h3>
-              <p>enfermeira@gmail.com</p>
+              <h3>Amanda Falcão</h3>
+              <p>professora@gmail.com</p>
               <hr className="divider" />
             </div>
 
@@ -129,12 +129,12 @@ function Professor() {
                     <ul>
                       <li>
                         <span>3º Ano A</span>
-                        <span>Professor: Maria Jenner</span>
+                        <span>Professor: Amanda Falcão</span>
                         <button className="visualizar">Visualizar</button>
                       </li>
                       <li>
                         <span>3º Ano B</span>
-                        <span>Professor: Maria Jenner</span>
+                        <span>Professor: Amanda Falcão</span>
                         <button className="visualizar">Visualizar</button>
                       </li>
                     </ul>
