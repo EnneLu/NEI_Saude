@@ -4,6 +4,7 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
+    background-color: #F2F8FF;
   }
   
   a {
@@ -374,4 +375,3 @@ body {
     background-color: #3366cc;
     color: white;
   }
-  
